@@ -1,0 +1,12 @@
+version: '3'
+services:
+  openssh:
+  # prebuild image
+  image: ghcr.io/vibrantleaf/container-opensshd:latest
+  #
+  #  optionaly build locally
+  # build: ./Containerfile
+  volumes:
+  # mount a local sshd_config to the contianer
+    - './sshd_config:/etc/ssh/sshd_config:ro'
+
