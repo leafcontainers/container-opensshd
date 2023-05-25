@@ -9,4 +9,8 @@ services:
   volumes:
   # mount a local sshd_config to the contianer
     - './sshd_config:/etc/ssh/sshd_config:ro'
+  ports:
+    # we must pass the sshd port though to the contianer
+    - 22:22
+
 
