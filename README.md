@@ -7,7 +7,7 @@ A quick little alpine container with openssh
 #!/usr/bin/bash
 
 # pull the contianer image
-podman pull ghcr.io/vibrantleaf/container-opensshd:nightly
+podman pull ghcr.io/leafcontainers/container-opensshd:nightly
 
 # create the sshd_config file
 touch ./sshd_config
@@ -24,7 +24,7 @@ podman-compose --file ./docker-compose.yaml up -d
 #!/usr/bin/bash
 
 # pull the contianer image
-docker pull ghcr.io/vibrantleaf/container-opensshd:nightly
+docker pull ghcr.io/leafcontainers/container-opensshd:nightly
 
 # create the sshd_config file
 touch ./sshd_config
