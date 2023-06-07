@@ -2,7 +2,7 @@ version: '3'
 services:
   openssh:
   # prebuild image
-  image: ghcr.io/vibrantleaf/container-opensshd:nightly
+  image: ghcr.io/leafcontainers/container-opensshd:nightly
   #
   #  optionaly build locally
   #build: ./Containerfile
